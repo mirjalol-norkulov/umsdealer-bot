@@ -2,14 +2,10 @@ import telebot
 import os
 import config
 from flask import Flask, request
+from main import bot
 
 app = Flask(__name__)
 
-bot = telebot.TeleBot(config.TOKEN)
-
-@bot.message_handler(commands=['start'])
-def start(message):
-    bot.send_message(message.chat.id, text="Welcome!")
 
 @app.route("/bot", methods=['POST'])
 def getMessage():

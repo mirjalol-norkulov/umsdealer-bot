@@ -2,7 +2,9 @@
 
 from peewee import *
 
-database = MySQLDatabase('umsdealer', **{'charset': 'utf8', 'use_unicode': True, 'password': 'keepcalm'})
+database = MySQLDatabase('umsdeale_database', host='umsdealer.uz', port=3306,
+                         **{'charset': 'utf8', 'use_unicode': True, 'user': 'umsdeale_dbadmin',
+                            'password': 'mirjalol24011996'})
 
 
 class UnknownField(object):
