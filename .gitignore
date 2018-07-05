@@ -106,3 +106,7 @@ venv.bak/
 .mypy_cache/
 
 .idea
+locales/ru/LC_MESSAGES/base.po
+locales/uz/
+static/
+templates/

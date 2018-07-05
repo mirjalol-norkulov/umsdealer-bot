@@ -1,0 +1,102 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR ORGANIZATION
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2018-06-23 18:49++05\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Generated-By: pygettext.py 1.5\n"
+
+
+#: markups.py:9
+msgid "Foydali"
+msgstr "Полезное"
+
+#: markups.py:10
+msgid "Internet"
+msgstr "Интернет"
+
+#: markups.py:11
+msgid "Muloqot"
+msgstr "Обшения"
+
+#: markups.py:12
+msgid "Yangiliklar"
+msgstr "Новости"
+
+#: markups.py:13
+msgid "Xizmatlar"
+msgstr "Услуги"
+
+#: markups.py:14
+msgid "Ta'riflar"
+msgstr "Тарифи"
+
+#: markups.py:15
+msgid "Balans"
+msgstr "Баланс"
+
+msgid "Tilni o'zgartirish"
+msgstr "Изменить язык"
+
+msgid "Ta'rif rejasiga o'tish"
+msgstr "Перейти на тарифний план"
+
+msgid "Super 0 xizmatini yoqish"
+msgstr "Подключить услугу Super 0"
+
+msgid "USSD kodni ulashish"
+msgstr "Поделиться кодом USSD"
+
+
+msgid "Hozircha shu yangiliklar mavjud"
+msgstr "Это все новости, которые у нас есть"
+
+msgid "Hozircha shu ta'riflar mavjud"
+msgstr "Это все тарифы, которые у нас есть"
+
+msgid "Hozircha shu xizmatlar mavjud"
+msgstr "Это все услуги, которые мы предоставляем"
+
+msgid "Iltimos menyudan foydalaning\nYoki quyidagi buyruqlardan foydalaning:\n/start - Botni ishga tushirish\n/help - Bot haqida batafsil ma'lumo"
+msgstr "Пожалуйста, используйте меню\nИли используйте эти команды:\n/start - Начать бот\n/help - Получить подробную информацию о боте"
+
+msgid "UMS - Talablarga mos aloqa operatori"
+msgstr "UMS - Оператор связи, каким он должен быть"
+
+msgid "Batafsil"
+msgstr "Узнать больше"
+
+msgid "To'plamni sotib olish"
+msgstr "Покупка пакета"
+
+msgid "UMS internet to'plam"
+msgstr "UMS интернет пакет"
+
+msgid "To'plamlar mavjud emas"
+msgstr "Пакетов нет"
+
+msgid "Internet to'plam qoldig'i"
+msgstr "Оставшийся интернет пакет"
+
+msgid "Android ilova"
+msgstr "Android приложение"
+
+msgid "Orqaga"
+msgstr "Назад"
+
+msgid "Keyingi"
+msgstr "Следующий"
+
+msgid "Hozircha shu to'plamlar mavjud"
+msgstr "Это все пакети, которые мы предоставляем"
+
+msgid "Telegram kanallarimiz"
+msgstr "Наши каналы в Telegram"
