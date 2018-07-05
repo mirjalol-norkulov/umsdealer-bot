@@ -6,14 +6,21 @@ from peewee import DoesNotExist
 
 import config
 import strings
-import main
+import gettext
 from urllib.parse import quote, urljoin
 
 from models import DialogItemTypes, CollectionModes, TelegramUsers, Infos, TelegramChannels
 
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
 
-_ = main._
+
+def _(language, s):
+    if language == 'ru':
+        ru = gettext.translation('base', localedir='locales', languages=['ru'])
+        ru.install()
+        return ru.gettext(s)
+    else:
+        return s
 
 
 # Common buttons

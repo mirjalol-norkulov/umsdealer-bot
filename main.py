@@ -537,7 +537,6 @@ def handle_commands(message):
     elif message.text == '/help':
         help(message)
 
-
 # if __name__ == '__main__':
 #     print('Bot started...')
 #     bot.polling(timeout=15)
