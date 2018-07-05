@@ -9,7 +9,7 @@ from main import bot
 
 API_TOKEN = config.TOKEN
 
-WEBHOOK_HOST = 'https://bot.umsdealer.uz'
+WEBHOOK_HOST = 'https://umsdealer-bot.herokuapp.com/'
 WEBHOOK_PORT = 8443  # 443, 80, 88 or 8443 (port need to be 'open')
 WEBHOOK_LISTEN = '0.0.0.0'  # In some VPS you may need to put here the IP addr
 
@@ -49,20 +49,6 @@ def webhook():
         return ''
     else:
         flask.abort(403)
-
-
-# Handle '/start' and '/help'
-@bot.message_handler(commands=['help', 'start'])
-def send_welcome(message):
-    bot.reply_to(message,
-                 ("Hi there, I am EchoBot.\n"
-                  "I am here to echo your kind words back to you."))
-
-
-# Handle all other messages
-@bot.message_handler(func=lambda message: True, content_types=['text'])
-def echo_message(message):
-    bot.reply_to(message, message.text)
 
 
 # Remove webhook, it fails sometimes the set if there is a previous webhook
