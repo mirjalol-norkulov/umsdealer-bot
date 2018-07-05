@@ -1,11 +1,21 @@
 #  -*- coding: utf-8 -*-
 
 from peewee import *
+from playhouse.pool import PooledMySQLDatabase
 
-database = MySQLDatabase('umsdeale_database', host='umsdealer.uz', port=3306,
-                         **{'charset': 'utf8', 'use_unicode': True, 'user': 'umsdeale_dbadmin',
-                            'password': 'mirjalol24011996'
-                            })
+# database = MySQLDatabase('umsdeale_database', host='umsdealer.uz', port=3306,
+#                          **{'charset': 'utf8', 'use_unicode': True, 'user': 'umsdeale_dbadmin',
+#                             'password': 'mirjalol24011996'
+#                             })
+database = PooledMySQLDatabase(
+    database='umsdeale_database',
+    host='umsdealer.uz', port=3306,
+    user='umsdeale_dbadmin',
+    password='mirjalol24011996',
+    max_connections=100,
+    stale_timeout=60,
+    timeout=20,
+)
 
 
 class UnknownField(object):
