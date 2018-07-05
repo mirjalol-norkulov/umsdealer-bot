@@ -126,7 +126,7 @@ def main_page_handler(message):
 
     elif main_page_keyboard.btn_telegram_channels and message.text == main_page_keyboard.btn_telegram_channels.text:
         telegram_channels = TelegramChannels.select()
-        msg = bot.send_message(message.chat.id, text = _(user.language_code))
+        msg = bot.send_message(message.chat.id, text=_(user.language_code))
         for channel in telegram_channels:
             text = f"<a href='{channel.url}'>{channel.title}</a>"
             msg = bot.send_message(message.chat.id, text=text, parse_mode='html')
@@ -541,4 +541,4 @@ def handle_commands(message):
 # if __name__ == '__main__':
 #     print('Bot started...')
 #     bot.polling(timeout=15)
-# ---------------------------------------------------------------------------------------------------------------
+# #---------------------------------------------------------------------------------------------------------------

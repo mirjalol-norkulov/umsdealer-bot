@@ -6,11 +6,14 @@ from peewee import DoesNotExist
 
 import config
 import strings
+import main
 from urllib.parse import quote, urljoin
-from main import _
+
 from models import DialogItemTypes, CollectionModes, TelegramUsers, Infos, TelegramChannels
 
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton, InlineKeyboardMarkup, InlineKeyboardButton
+
+_ = main._
 
 
 # Common buttons
