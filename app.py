@@ -5,9 +5,11 @@ import time
 
 import config
 
-from main import bot
+# from main import bot
 
 API_TOKEN = config.TOKEN
+
+bot = telebot.TeleBot(config.TOKEN)
 
 WEBHOOK_HOST = 'https://umsdealer-bot.herokuapp.com/'
 WEBHOOK_PORT = 8443  # 443, 80, 88 or 8443 (port need to be 'open')
@@ -33,10 +35,15 @@ telebot.logger.setLevel(logging.INFO)
 app = flask.Flask(__name__)
 
 
+@bot.message_handler(commands=['start'])
+def start(message):
+    bot.send_message(message.chat.id, text="Welcome!")
+
+
 # Empty webserver index, return nothing, just http 200
 @app.route('/', methods=['GET', 'HEAD'])
 def index():
-    return ''
+    return '200 Ok!'
 
 
 # Process webhook calls
